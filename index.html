@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <button class="menu-button">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+      <img src="img/logo.svg" alt="Youtube logo" class="logo" />
+      <div class="search-group">
+        <input
+          type="search"
+          name="search"
+          class="input-search"
+          placeholder="Search"
+        />
+        <button type="submit" class="button-search">
+          <svg class="icon button-search__icon">
+            <use xlink:href="img/icons.svg#searchBtn"></use>
+          </svg>
+        </button>
+      </div>
+<div class="mobile-search">
+  <svg class="icon button-search__icon">
+            <use xlink:href="img/icons.svg#searchBtn"></use>
+          </svg>
+</div>
+<!-- /.mobile-search -->
+
+
+      <div class="block-user">
+        <a href="" class="block-user__link"
+          ><svg class="icon" width="27" height="20">
+            <use xlink:href="img/icons.svg#video"></use></svg
+        ></a>
+        <a href="" class="block-user__link"
+          ><svg class="icon" width="21" height="21">
+            <use xlink:href="img/icons.svg#aps"></use></svg
+        ></a>
+        <a href="" class="block-user__link"
+          ><svg class="icon" width="22" height="26">
+            <use xlink:href="img/icons.svg#notification"></use></svg
+        ></a>
+      </div>
+      <a href="" class="user-avatar">
+        <img src="img/ava.png" alt="user-avatar" class="user-avatar__img" />
+      </a>
+    </header>
+    <div class="mobile-sidebar">
+      <ul class="nav-menu">
+        <li class="nav-menu__item">
+          <a href="" class="nav-menu__link"
+            ><svg class="icon" width="20" height="19">
+              <use xlink:href="img/icons.svg#home"></use>
+            </svg>
+            <span class="nav-menu__text">Home</span></a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a href="" class="nav-menu__link"
+            ><svg class="icon" width="16" height="21">
+              <use xlink:href="img/icons.svg#trending"></use>
+            </svg>
+            <span class="nav-menu__text">Trending</span></a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a href="" class="nav-menu__link"
+            ><svg class="icon" width="18" height="18">
+              <use xlink:href="img/icons.svg#subscriptions"></use>
+            </svg>
+            <span class="nav-menu__text">Subscriptions</span></a
+          >
+        </li>
+        <li class="nav-menu__item">
+          <a href="" class="nav-menu__link"
+            ><svg class="icon" width="20" height="19">
+              <use xlink:href="img/icons.svg#library"></use>
+            </svg>
+            <span class="nav-menu__text">Library</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- /.mobile-sidibar -->
+    <div class="container">
+      <aside class="sidebar">
+        <nav class="navigation">
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="20" height="19">
+                  <use xlink:href="img/icons.svg#home"></use>
+                </svg>
+                <span class="nav-menu__text">Home</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="16" height="21">
+                  <use xlink:href="img/icons.svg#trending"></use>
+                </svg>
+                <span class="nav-menu__text">Trending</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="18" height="18">
+                  <use xlink:href="img/icons.svg#subscriptions"></use>
+                </svg>
+                <span class="nav-menu__text">Subscriptions</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="20" height="19">
+                  <use xlink:href="img/icons.svg#library"></use>
+                </svg>
+                <span class="nav-menu__text">Library</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="16" height="21">
+                  <use xlink:href="img/icons.svg#history"></use>
+                </svg>
+                <span class="nav-menu__text">History</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="18" height="18">
+                  <use xlink:href="img/icons.svg#watch"></use>
+                </svg>
+                <span class="nav-menu__text">Watch later</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="20" height="19">
+                  <use xlink:href="img/icons.svg#favorites"></use>
+                </svg>
+                <span class="nav-menu__text">Favorites</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="16" height="21">
+                  <use xlink:href="img/icons.svg#liked"></use>
+                </svg>
+                <span class="nav-menu__text">Liked videos</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="18" height="18">
+                  <use xlink:href="img/icons.svg#music"></use>
+                </svg>
+                <span class="nav-menu__text">Music</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="20" height="19">
+                  <use xlink:href="img/icons.svg#game"></use>
+                </svg>
+                <span class="nav-menu__text">Games</span></a
+              >
+            </li>
+            <li class="nav-menu__item">
+              <a href="" class="nav-menu__link"
+                ><svg class="icon" width="16" height="21">
+                  <use xlink:href="img/icons.svg#showMore"></use>
+                </svg>
+                <span class="nav-menu__text">Show more</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <h2 class="nav-title">Subscriptions</h2>
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link subscription-avatar">
+              <img
+                src="img/Gussie.png"
+                alt="photo Gussie Singleton"
+                class="user-avatar__img"
+              />
+
+              <span class="nav-menu__text">Gussie Singleton</span></a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link subscription-avatar">
+              <img
+                src="img/Nora.png"
+                alt="photo Nora Francis"
+                class="user-avatar__img"
+              />
+
+              <span class="nav-menu__text">Nora Francis</span></a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link subscription-avatar">
+              <img
+                src="img/Belle.png"
+                alt="photo Belle Briggs"
+                class="user-avatar__img"
+              />
+
+              <span class="nav-menu__text">Belle Briggs</span></a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link subscription-avatar">
+              <img
+                src="img/Eunice.png"
+                alt="photo Eunice Cortez"
+                class="user-avatar__img"
+              />
+
+              <span class="nav-menu__text">Eunice Cortez</span></a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link subscription-avatar">
+              <img
+                src="img/Emma.png"
+                alt="photo Emma Hanson"
+                class="user-avatar__img"
+              />
+
+              <span class="nav-menu__text">Emma Hanson</span></a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link subscription-avatar">
+              <img
+                src="img/Leah.png"
+                alt="photo Leah Berry"
+                class="user-avatar__img"
+              />
+
+              <span class="nav-menu__text">Leah Berry</span></a
+            >
+          </li>
+        </ul>
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a href="" class="nav-menu__link"
+              ><svg class="icon" width="20" height="19">
+                <use xlink:href="img/icons.svg#setting"></use>
+              </svg>
+              <span class="nav-menu__text">Setting</span></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main class="content">
+        <div class="subscriptions-video">
+          <a href="" class="subscriptions-video__title">
+            <img
+              src="img/Gussie.png"
+              alt="chanel photo Dollie Blair"
+              class="subscriptions-video__avatar"
+            />
+            <span class="subscriptions-video__description">Dollie Blair</span>
+          </a>
+          <div class="slider-buttons">
+            <!-- If we need navigation buttons -->
+            <div class="chanel-button subscriptions-video-button-prev">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="img/icons.svg#Left"></use>
+              </svg>
+            </div>
+            <div class="chanel-button subscriptions-video-button-next">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="img/icons.svg#Right"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- /.slider-button -->
+          <!-- Slider main container -->
+          <div class="swiper swiper-container subscriptions-video__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo.png"
+                      alt="cover-video"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">4:15</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">A Brief History Of Creation</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">80k views </span>
+                      <span class="video-date"> 3 days ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <!--/.swiper-slide-->
+
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo2.png"
+                      alt="cover-video2"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">8:00</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Selecting The Right Hotel</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">123k views </span>
+                      <span class="video-date"> 1 months ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo3.png"
+                      alt="cover-video3"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">5:32</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Asteroids</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">43k views </span>
+                      <span class="video-date"> 12 days ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo4.png"
+                      alt="cover-video4"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">6:40</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Telescopes 101</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">11k views </span>
+                      <span class="video-date"> 6 months ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo5.png"
+                      alt="cover-video5"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">1:45</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Medical Care Is Just</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">18k views </span>
+                      <span class="video-date"> 2 days ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo6.png"
+                      alt="cover-video6"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">2:12</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Moon Gazing</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">67k views </span>
+                      <span class="video-date"> 4 months ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+            </div>
+          </div>
+          <!--/.swiper-container-->
+        </div>
+        <!--/.subscriptions-video-->
+
+        <div class="subscriptions-video">
+          <a href="" class="subscriptions-video__title">
+            <span class="subscriptions-video__description recommend"
+              >Recommended</span
+            >
+          </a>
+          <div class="slider-buttons">
+            <!-- If we need navigation buttons -->
+            <div class="chanel-button recommend-video-button-prev">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="img/icons.svg#Left"></use>
+              </svg>
+            </div>
+            <div class="chanel-button recommend-video-button-next">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="img/icons.svg#Right"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- /.slider-button -->
+          <!-- Slider main container -->
+          <div class="swiper swiper-container recommend-video__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video-card video-card-recommend">
+                  <div class="video-thumb video-thumb-recommend">
+                    <img
+                      src="img/coverVideo7.png"
+                      alt="cover-video7"
+                      class="thumbnail thumbnail-recommend"
+                    />
+                    <span class="video-duration">3:40</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Dude You Re Getting A Telescope</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">34k views </span>
+                      <span class="video-date"> 5 months ago</span>
+                    </span>
+                    <span class="video-chanel">Gussie French</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <!--/.swiper-slide-->
+
+              <div class="swiper-slide">
+                <div class="video-card video-card-recommend">
+                  <div class="video-thumb video-thumb-recommend">
+                    <img
+                      src="img/coverVideo8.png"
+                      alt="cover-video8"
+                      class="thumbnail thumbnail-recommend"
+                    />
+                    <span class="video-duration">2:12</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Moon Gazing</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">54k views </span>
+                      <span class="video-date"> 11 months ago</span>
+                    </span>
+                    <span class="video-chanel">Edward Osborne</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <!--/.swiper-slide-->
+              <div class="swiper-slide">
+                <div class="video-card video-card-recommend">
+                  <div class="video-thumb video-thumb-recommend">
+                    <img
+                      src="img/coverVideo9.png"
+                      alt="cover-video9"
+                      class="thumbnail thumbnail-recommend"
+                    />
+                    <span class="video-duration">2:12</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Moon Gazing</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">125k views </span>
+                      <span class="video-date"> 4 months ago</span>
+                    </span>
+                    <span class="video-chanel">Dollie Blair</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <!--/.swiper-slide-->
+            </div>
+          </div>
+          <!--/.swiper-container-->
+        </div>
+        <!--/.subscriptions-video-->
+
+        <div class="subscriptions-video">
+          <a href="" class="subscriptions-video__title">
+            <img
+              src="img/foodAva.png"
+              alt="chanel photo Dollie Blair"
+              class="subscriptions-video__avatar"
+            />
+            <span class="subscriptions-video__description"
+              >Food & Drink
+              <span class="subtitle-description"
+                >Recommended channel for you</span
+              ></span
+            >
+          </a>
+          <div class="slider-buttons">
+            <!-- If we need navigation buttons -->
+            <div class="chanel-button food-chanel-video-button-prev">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="img/icons.svg#Left"></use>
+              </svg>
+            </div>
+            <div class="chanel-button food-chanel-video-button-next">
+              <svg class="icon" width="28" height="28">
+                <use xlink:href="img/icons.svg#Right"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- /.slider-button -->
+          <!-- Slider main container -->
+          <div class="swiper swiper-container food-chanel-video__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo10.png"
+                      alt="cover-video10"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">7:36</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Astronomy Or Astrology</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">240k views </span>
+                      <span class="video-date"> 4 months ago</span>
+                    </span>
+                    <span class="video-chanel">Food & Drink</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <!--/.swiper-slide-->
+
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo11.png"
+                      alt="cover-video11"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">2:19</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Advertising Outdoors</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">13k views </span>
+                      <span class="video-date">15 days ago</span>
+                    </span>
+                    <span class="video-chanel">Food & Drink</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo12.png"
+                      alt="cover-video12"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">9:05</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Radio Astronomy</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">1k views </span>
+                      <span class="video-date"> 11 months ago</span>
+                    </span>
+                    <span class="video-chanel">Food & Drink</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo13.png"
+                      alt="cover-video13"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">3:40</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">A Good Autoresponder</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">45k views </span>
+                      <span class="video-date"> 2 months ago</span>
+                    </span>
+                    <span class="video-chanel">Food & Drink</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo14.png"
+                      alt="cover-video14"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">1:56</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Baby Monitor Technology</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">86k views </span>
+                      <span class="video-date"> 7 days ago</span>
+                    </span>
+                    <span class="video-chanel">Food & Drink</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+
+              <div class="swiper-slide">
+                <div class="video-card">
+                  <div class="video-thumb">
+                    <img
+                      src="img/coverVideo15.png"
+                      alt="cover-video15"
+                      class="thumbnail"
+                    />
+                    <span class="video-duration">4:15</span>
+                  </div>
+                  <!-- /.video-thumb -->
+                  <h3 class="video-title">Asteroids</h3>
+                  <div class="video-info">
+                    <span class="video-counter">
+                      <span class="video-views">123k views </span>
+                      <span class="video-date"> 4 months ago</span>
+                    </span>
+                    <span class="video-chanel">Food & Drink</span>
+                  </div>
+                </div>
+                <!-- /.video-card -->
+              </div>
+            </div>
+          </div>
+          <!--/.swiper-container-->
+        </div>
+        <!--/.subscriptions-video-->
+      </main>
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
